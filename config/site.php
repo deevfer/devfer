@@ -11,8 +11,8 @@ return [
 
     'email' => env('SITE_EMAIL', 'hola@fernandovasquez.tech'),
 
-    'locales' => ['en', 'es'],
+    'locales' => ['es', 'en'],
 
-    'default_locale' => 'en',
+    'default_locale' => 'es',
 
 ];

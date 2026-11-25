@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Support\Messages;
+use App\Models\Setting;
+use App\Models\SiteText;
 use App\Support\OgImage;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class SeoController extends Controller
 {
@@ -13,7 +16,7 @@ class SeoController extends Controller
     {
         $sitemap = config('site.url').'/sitemap.xml';
 
-        return response("User-Agent: *\nAllow: /\n\nSitemap: {$sitemap}\n")
+        return response("User-Agent: *\nAllow: /\nDisallow: /admin\nDisallow: /livewire\n\nSitemap: {$sitemap}\n")
             ->header('Content-Type', 'text/plain; charset=UTF-8');
     }
 
@@ -26,7 +29,7 @@ class SeoController extends Controller
 
         $links = collect($locales)
             ->map(fn ($l) => "<xhtml:link rel=\"alternate\" hreflang=\"{$l}\" href=\"{$url}/{$l}\" />")
-            ->push("<xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"{$url}/{$default}\" />")
+            ->push("<xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"{$url}/\" />")
             ->implode("\n");
 
         $entries = collect($locales)->map(fn ($l) => implode("\n", [
@@ -49,20 +52,21 @@ class SeoController extends Controller
     /** Rendered once per copy change, then served from storage. */
     public function ogImage(string $locale): Response
     {
-        $t = fn (string $key) => Messages::get($locale, "hero.{$key}");
-        $lines = ["{$t('a1')} {$t('a2')}", "{$t('b1')} {$t('b2')}"];
-        $caption = "{$t('name')}: {$t('role')}";
+        $t = SiteText::forLocale($locale);
+        $name = Setting::get('profile.name', 'Fernando Vásquez');
+        $statement = Str::ucfirst("{$t['hero.expert']} {$t['hero.skill_a']} {$t['hero.and']} {$t['hero.skill_b']}.");
+        $caption = "{$t['hero.role']} · fernandovasquez.tech";
+        $photo = Setting::get('profile.photo');
+        $photoPath = $photo ? Storage::disk('public')->path($photo) : null;
 
-        $key = md5(implode('|', [...$lines, $caption, filemtime(app_path('Support/OgImage.php'))]));
+        $key = md5(implode('|', [$name, $statement, $caption, $photo, filemtime(app_path('Support/OgImage.php'))]));
         $path = storage_path("app/og/{$locale}-{$key}.png");
 
         if (! File::exists($path)) {
             File::ensureDirectoryExists(dirname($path));
             File::delete(File::glob(storage_path("app/og/{$locale}-*.png")));
-            $png = (new OgImage(
-                resource_path('fonts/FunnelDisplay-Medium.ttf'),
-                resource_path('fonts/InstrumentSans-Regular.ttf'),
-            ))->render($lines, $caption);
+            $png = (new OgImage(resource_path('fonts/Geist-SemiBold.ttf'), resource_path('fonts/Geist-Regular.ttf')))
+                ->render($name, $statement, $caption, $photoPath);
             File::put($path, $png);
         }
 

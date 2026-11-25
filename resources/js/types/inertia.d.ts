@@ -1,4 +1,4 @@
-import type { SiteProps } from '@/composables/useI18n';
+import type { SiteProps } from '@/composables/useSite';
 
 declare module '@inertiajs/core' {
     export interface InertiaConfig {

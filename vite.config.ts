@@ -13,9 +13,8 @@ export default defineConfig({
             input: ['resources/css/app.css', 'resources/js/app.ts'],
             refresh: true,
             fonts: [
-                google('Funnel Display', { variable: '--font-funnel', weights: [400], subsets }),
-                google('Instrument Sans', { variable: '--font-instrument', weights: [400, 500], subsets }),
-                google('Martian Mono', { variable: '--font-martian', weights: [400], subsets }),
+                google('Geist', { variable: '--font-geist', weights: [400, 500, 600, 700], subsets }),
+                google('Geist Mono', { variable: '--font-geist-mono', weights: [400, 500], subsets }),
             ],
         }),
         inertia(),
