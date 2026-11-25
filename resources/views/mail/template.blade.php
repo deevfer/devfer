@@ -15,8 +15,9 @@
                 </td></tr>
                 <tr><td style="background-color:#111113;border-radius:26px 26px 0 0;padding:32px 32px 30px;color:#ffffff;">
                     <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
-                        <td style="width:10px;height:10px;border-radius:50%;background-color:#f95083;font-size:0;line-height:0;">&nbsp;</td>
-                        <td style="padding-left:9px;color:#c6c6ca;font-size:11px;line-height:16px;letter-spacing:1.4px;text-transform:uppercase;">{{ $lang === 'en' ? 'A message from' : 'Un mensaje de' }}</td>
+                        {{-- The memoji (trimmed, same file as the favicon); mail clients need an absolute URL --}}
+                        <td width="32" valign="middle" style="width:32px;line-height:0;"><img src="{{ config('site.url') }}/favicon-192.png" width="32" height="32" alt="" style="display:block;width:32px;height:32px;border:0;outline:none;text-decoration:none;"></td>
+                        <td valign="middle" style="padding-left:10px;color:#c6c6ca;font-size:11px;line-height:16px;letter-spacing:1.4px;text-transform:uppercase;">{{ $lang === 'en' ? 'A message from' : 'Un mensaje de' }}</td>
                     </tr></table>
                     <div style="padding-top:20px;font-size:32px;line-height:1.1;font-weight:bold;letter-spacing:-1.3px;color:#ffffff;">Fernando Vásquez<span style="color:#f95083;">.</span></div>
                     <div style="padding-top:9px;color:#b2b2b7;font-size:13px;line-height:1.5;">{{ $lang === 'en' ? 'Development & interface design' : 'Desarrollo y diseño de interfaces' }}</div>

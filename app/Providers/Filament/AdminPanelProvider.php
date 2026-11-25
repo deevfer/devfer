@@ -32,6 +32,7 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->login()
             ->brandName('Fernando Vásquez · Panel')
+            ->favicon('/favicon.ico')
             ->colors([
                 'primary' => Color::hex('#ea4e96'),
                 'gray' => Color::Zinc,
