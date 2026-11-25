@@ -1,0 +1,239 @@
+{
+  "meta": {
+    "title": "Fernando Vásquez — Full-stack developer and UX/UI designer",
+    "description": "Fernando Vásquez (Luisfer, Devfer) designs interfaces and then builds them. 11+ years and 200+ projects of websites, web apps and mobile apps across food service, telecom, trade, employment and agency work.",
+    "ogAlt": "Fernando Vásquez, full-stack developer and UX/UI designer"
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "home": "Fernando Vásquez, back to the top",
+    "closeMenu": "Close menu",
+    "language": "Language"
+  },
+  "nav": {
+    "menu": "Menu",
+    "close": "Close",
+    "talk": "Let's talk",
+    "items": {
+      "intro": "Intro",
+      "about": "About",
+      "numbers": "In numbers",
+      "industries": "Industries",
+      "capabilities": "Capabilities",
+      "evolution": "Evolution",
+      "contact": "Contact"
+    }
+  },
+  "hero": {
+    "name": "Fernando Vásquez",
+    "role": "Full-stack development and UX/UI design",
+    "a1": "Designed by",
+    "a2": "Luisfer.",
+    "b1": "Built by",
+    "b2": "Devfer.",
+    "srHeadline": "Designed by Luisfer, built by Devfer. Two nicknames, one person: Fernando Vásquez designs interfaces and develops them.",
+    "years": "11+",
+    "yearsLabel": "years designing and building for the web",
+    "projects": "200+",
+    "projectsLabel": "projects delivered",
+    "design": "Design",
+    "build": "Build",
+    "hintPointer": "Move the cursor across the headline.",
+    "hintTouch": "Drag across the headline."
+  },
+  "about": {
+    "title": "Most projects need a designer and a developer. I'm both.",
+    "p1": "I'm a Systems Engineer who started out turning client requirements into website frontends. Since then I've rebuilt job boards and institutional sites, designed a digital magazine, led IT at an agency, run the sites of a telecom operator in two countries, and today I build the websites and web apps of a quick-service restaurant group across Mesoamérica.",
+    "p2": "Because I design what I build, nothing gets lost between the mockup and production.",
+    "aside": "Away from the keyboard: coffee, comics and video games."
+  },
+  "numbers": {
+    "title": "In numbers",
+    "step1": "Every square is a project.",
+    "step1sub": "Two hundred of them, laid out in eleven columns.",
+    "step2": "200+ projects",
+    "step2sub": "Websites, web apps, mobile apps and the infrastructure behind them.",
+    "step3": "11+ years",
+    "step3sub": "of designing and building for the web, with work used in 5+ countries.",
+    "caption": "Illustration: each cell stands for one project. The layout is not a timeline."
+  },
+  "industries": {
+    "title": "Industries I've worked in",
+    "lead": "Different sectors, same job: make complex things simple to use, then make them hold up.",
+    "hint": "Hover or select a sector to see what I built there.",
+    "items": {
+      "food": {
+        "name": "Food service",
+        "body": "Websites and web apps for a quick-service restaurant group across Mesoamérica: structure, implementation and ongoing development.",
+        "meta": "2022 to today"
+      },
+      "telecom": {
+        "name": "Telecommunications",
+        "body": "Every institutional website of a telecom operator in Guatemala and Nicaragua, managed from inside the marketing team.",
+        "meta": "2021"
+      },
+      "trade": {
+        "name": "Trade and export",
+        "body": "Redesign and development of a new digital magazine for a national exporters' association.",
+        "meta": "2019"
+      },
+      "employment": {
+        "name": "Employment platforms",
+        "body": "A new version of an institution's job board, redesigned and rebuilt, plus all of its websites.",
+        "meta": "2018 to 2019"
+      },
+      "agencies": {
+        "name": "Digital agencies",
+        "body": "Websites and apps for agency clients, from gathering requirements to design, frontend and full builds.",
+        "meta": "2016 to 2018, 2020 to 2021"
+      }
+    }
+  },
+  "capabilities": {
+    "title": "What I can build",
+    "lead": "Six things I take from first sketch to production. Open one to see what it involves and what I build it with.",
+    "builtWith": "Built with",
+    "items": {
+      "websites": {
+        "name": "Websites",
+        "body": "Institutional sites and digital publications, designed and developed, then kept healthy as a webmaster.",
+        "tech": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "Tailwind CSS",
+          "Bootstrap",
+          "PHP",
+          "Laravel",
+          "CodeIgniter",
+          "MySQL"
+        ]
+      },
+      "webapps": {
+        "name": "Web applications",
+        "body": "Job boards and business web apps with real users behind them, from the data model to the last interface state.",
+        "tech": [
+          "Vue.js",
+          "React",
+          "jQuery",
+          "Node.js",
+          "Laravel",
+          "MySQL",
+          "Oracle",
+          "Postman"
+        ]
+      },
+      "mobile": {
+        "name": "Mobile applications",
+        "body": "Apps designed and developed for clients, with the same care for the interface as for the code behind it.",
+        "tech": []
+      },
+      "interfaces": {
+        "name": "Interfaces and UX",
+        "body": "Wireframes, experience maps, visual identity and interaction design that a developer can actually build, because I'm that developer.",
+        "tech": [
+          "Figma",
+          "Sketch",
+          "Adobe XD",
+          "Photoshop",
+          "Illustrator"
+        ]
+      },
+      "architecture": {
+        "name": "Code architecture and security",
+        "body": "Structure that lets a codebase grow, plus protection and optimization for sites, web apps and mobile apps.",
+        "tech": [
+          "PHP",
+          "Laravel",
+          "CodeIgniter",
+          "Node.js",
+          "Git",
+          "GitHub",
+          "GitLab"
+        ]
+      },
+      "infrastructure": {
+        "name": "Infrastructure and care",
+        "body": "Hosting, domains, email, SSL certificates, monitoring and backups, so whatever launches keeps running.",
+        "tech": [
+          "AWS",
+          "Linux"
+        ]
+      }
+    },
+    "stackTitle": "Where the stack runs",
+    "stack": [
+      {
+        "where": "Before any code",
+        "tech": [
+          "Figma",
+          "Sketch",
+          "Adobe XD",
+          "Photoshop",
+          "Illustrator"
+        ]
+      },
+      {
+        "where": "In the browser",
+        "tech": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "jQuery",
+          "Vue.js",
+          "React",
+          "Tailwind CSS",
+          "Bootstrap"
+        ]
+      },
+      {
+        "where": "On the server",
+        "tech": [
+          "PHP",
+          "Laravel",
+          "CodeIgniter",
+          "Node.js"
+        ]
+      },
+      {
+        "where": "For the data",
+        "tech": [
+          "MySQL",
+          "Oracle"
+        ]
+      },
+      {
+        "where": "In production",
+        "tech": [
+          "AWS",
+          "Linux",
+          "Git",
+          "GitHub",
+          "GitLab",
+          "Postman"
+        ]
+      }
+    ]
+  },
+  "evolution": {
+    "title": "Still compiling.",
+    "lead": "Eleven years of getting better at the same craft: designing what people use, and building it to last.",
+    "jump": "Go to {year}",
+    "stage": "Stage {n} of {total}",
+    "today": "today"
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Contacting me is easier than making coffee.",
+    "lead": "Tell me what you're building, what it needs to do and when. Teams and recruiters, same address.",
+    "copy": "Copy email",
+    "copied": "Email copied",
+    "write": "Write an email",
+    "subject": "Hello Fernando"
+  },
+  "footer": {
+    "rights": "Fernando Vásquez",
+    "top": "Back to top",
+    "built": "Designed and built by Luisfer and Devfer, who are the same person."
+  }
+}
